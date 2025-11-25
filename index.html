@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Птички у кормушки — Прямой эфир</setTitle>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 25px;
+      padding: 15px 0;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #2980b9;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #7f8c8d;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      background: #000;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #95a5a6;
+    }
+    .update-note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🕊 Птички у кормушки — Прямой эфир</h1>
+      <p class="subtitle">Наблюдаем за пернатыми друзьями в реальном времени</p>
+    </header>
+
+    <div class="video-wrapper">
+      <!-- ЗАМЕНИТЕ XXXXXXXX на актуальный ID вашей трансляции в RuTube -->
+      <iframe
+        src="https://rutube.ru/play/embed/XXXXXXXX"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <p class="update-note">❗ Трансляция обновляется ежедневно — если плеер пустой, зайдите позже!</p>
+    
+    <p class="footer">
+      Обновлено: <span id="last-update">25 ноября 2025</span>
+    </p>
+  </div>
+
+  <script>
+    // Необязательно: можно вручную менять дату в HTML, или обновлять через JS
+    // Например, если хотите, чтобы дата менялась при каждом коммите — просто редактируйте HTML
+  </script>
+</body>
+</html>
